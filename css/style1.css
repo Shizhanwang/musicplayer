@@ -1,0 +1,317 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+	/*opacity: 0.88;*/
+	font-family: "微软雅黑";
+	
+}
+audio{
+}
+body{
+	overflow: hidden;
+}
+#top{
+	width:100%px;
+	height:50px;
+	background: red;
+	opacity: 0.5;
+	background-size:100%,100%;
+	font-size:44px;
+	text-indent: 30px;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	box-shadow: 0px 10px 30px red;
+}
+#bgm{
+	background: #000;
+	position: absolute;
+	height: 10%;
+	width: 40%;
+	height: 700px;
+	width: 1280px;
+	background-size: cover;
+}
+
+img{
+	height: 100%;
+	width: 100%;
+}
+.img0{
+	position: absolute;
+	z-index: 9999999;
+	border-radius: 5px;
+}
+
+
+.img1{
+	height: 0px;
+	width: 20px;
+	border-radius: 10px;
+	transform-origin: top;
+	transform: scale(1) rotateY(90deg);
+	position: relative;
+	left: 35px;
+	bottom: 0px;
+	display: block;
+	transition: all 2s;
+}
+.movie{
+	position: absolute;
+	left: 20px;
+	top: 90px;
+	height: 160px;
+	width: 20px;
+	background: url(../img/bgm.gif);
+	background-size: cover;
+}
+.stage{
+	width: 150px;
+	height: 150px;
+	margin: 10% 45% ;
+	position: relative;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: perspective(800px) translateZ(-100px);
+	-moz-transform: perspective(800px) translateZ(-100px);
+	-ms-transform: perspective(800px) translateZ(-100px);
+	-o-transform: perspective(800px) translateZ(-100px);
+	transform: perspective(800px)translateZ(50px);
+	background-size: cover;
+}
+.stage1{
+	
+	z-index: 9;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	transform: rotateY(40deg) translateZ(250px);
+	-webkit-box-reflect: below 0px -webkit-linear-gradient(top,rgba(0,0,0,0) 40%,rgba(0,0,0,0.7) 100%);
+}
+.stage2{
+	
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	transform:rotateY(80deg)  translateZ(250px);
+	-webkit-box-reflect: below 0px -webkit-linear-gradient(top,rgba(0,0,0,0) 40%,rgba(0,0,0,0.7) 100%);
+}
+.stage3{
+	
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	transform:rotateY(120deg)  translateZ(250px);
+	-webkit-box-reflect: below 0px -webkit-linear-gradient(top,rgba(0,0,0,0) 40%,rgba(0,0,0,0.7) 100%);
+	
+}
+.stage4{
+	
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	transform:rotateY(160deg)  translateZ(250px);
+	-webkit-box-reflect: below 0px -webkit-linear-gradient(top,rgba(0,0,0,0) 40%,rgba(0,0,0,0.7) 100%);
+}
+.stage5{
+	
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	transform:rotateY(200deg)  translateZ(250px);
+	-webkit-box-reflect: below 0px -webkit-linear-gradient(top,rgba(0,0,0,0) 40%,rgba(0,0,0,0.7) 100%);
+}
+.stage6{
+	
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	transform:rotateY(240deg)  translateZ(250px);
+	-webkit-box-reflect: below 0px -webkit-linear-gradient(top,rgba(0,0,0,0) 40%,rgba(0,0,0,0.7) 100%);
+}
+.stage7{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	transform:rotateY(280deg)  translateZ(250px);
+	-webkit-box-reflect: below 0px -webkit-linear-gradient(top,rgba(0,0,0,0) 40%,rgba(0,0,0,0.7) 100%);
+}
+.stage8{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	transform:rotateY(320deg)  translateZ(250px);
+	-webkit-box-reflect: below 0px -webkit-linear-gradient(top,rgba(0,0,0,0) 40%,rgba(0,0,0,0.7) 100%);
+}
+.stage9{
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	transform:rotateY(360deg)  translateZ(250px);
+	-webkit-box-reflect: below 0px -webkit-linear-gradient(top,rgba(0,0,0,0) 40%,rgba(0,0,0,0.7) 100%);
+}
+#container{
+	position: absolute;
+	height: 300px;
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 26%;
+	background: transparent;
+	z-index: 9999;
+	border-radius: 20px;
+}
+#controls{
+	height: 50px;
+	width: 90%;
+	margin-left: 5%;
+	background: red;
+	opacity: 0.5;
+	border-radius: 50px;
+    box-shadow: 1px 1px 30px red;		
+}
+#main{
+	margin-top: 10px;
+	height: 230px;
+	width: 90%;
+	margin-left: 5%;
+	background: transparent;
+}
+.disk{
+	border-radius: 200px;
+	background: url(../img/disk1.jpg);
+	height: 220px;
+	width: 220px;
+	background-size: cover;
+	transition: 300s linear;
+    box-shadow: 1px 1px 50px red,0px 0px 10px red inset;
+    transform: rotate(0deg);		
+}
+.disk img{
+	height: 100px;
+	width: 100px;
+	text-align: center;
+	margin-left: 60px;
+	margin-top: 60px;
+	border-radius:50px;
+}
+#diskg{
+	position: absolute;
+	top: 56px;
+	left: 210px;
+	height: 200px;
+	width: 100px;
+	transform-origin: 90% 10%;
+	transform: rotate(-15deg);
+	transition: 1s;
+	z-index: 99999;
+}
+#volimg{
+	position: absolute;
+	left: 860px;
+	top: 60px;
+	border-radius: 200px;
+	background: url(../img/disk1.jpg);
+	height: 220px;
+	width: 220px;
+	background-size: cover;
+	transition: 1s;
+	transform: rotate(0deg);
+	z-index: 999999;
+    box-shadow: 1px 1px 50px red,0px 0px 10px red inset;		
+	
+}
+#volimgg{
+	position: absolute;
+	top: 56px;
+	left: 1010px;
+	height: 200px;
+	width: 100px;
+	transform-origin: 90% 10%;
+	transform: rotate(-15deg);
+	transition: 1s;
+	z-index: 9999999;
+}
+
+#start{
+	float: left;
+	height: 30px;
+	width: 30px;
+}
+#volStop{
+	float: left;
+	height: 30px;
+	width: 30px;
+}
+
+#next{
+	float: right;
+	height: 30px;
+	width: 30px;
+}
+#forward{
+	float: left;
+	height: 30px;
+	width: 30px;
+}
+#volRange{
+	position: absolute;
+	left: 800px;
+	top: 5%;
+}
+#playRange{
+	width: 85%;
+	position: absolute;
+	top: 5%;
+	margin-left: 30px;
+}
+#span1{
+	margin-top: 5px;
+	position: absolute;
+	left: 12%;
+	color: black;
+}
+#span2{
+	margin-top: 5px;
+	position: absolute;
+	left: 86%;
+	color: black;
+	
+}
+.songList{
+	border-radius: 10px;
+	padding: 20px;
+	height: 180px;
+	width: 480px;
+	background: transparent;
+	background-size: cover;
+	position: absolute;
+	left: 320px;
+	top: 60px;
+	transform: scale(0);
+	z-index: 9999999;
+	transition: all 1s;
+}
+.songList h1{
+	color: white;
+	text-shadow: 3px 3px 20px red;
+	text-align: center;
+}
+.songList h3{
+	margin-left: 50px;
+	margin-top: 30px;
+	color: rgb(220,62,62);
+	text-shadow: 3px 3px 20px red;
+	
+}
+#repeat{
+	height: 32px;
+	width: 32px;
+	margin: 94px;
+}
+#repeat:hover{
+	height: 32px;
+	width: 32px;
+	margin: 94px;
+	opacity: 0.4;
+}
